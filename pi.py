@@ -1,4 +1,6 @@
-a = 10
-b = 2
-c = a/b
-print("uitkomst:", c)
+import pandas
+
+datums = pandas.date_range("20220101", periods=6)
+
+for datum in datums:
+     print(datum.date())
